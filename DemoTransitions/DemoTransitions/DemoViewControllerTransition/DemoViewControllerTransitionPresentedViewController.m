@@ -21,6 +21,8 @@
     
     [self addLabel];
     
+    [self addBtns];
+    
     [self prepareBubble];
 }
 
@@ -31,6 +33,13 @@
     
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
+}
+
+- (void)addBtns {
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 60)];
+    [btn setTitle:@"Back" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(actionDismiss:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)prepareBubble {
@@ -46,10 +55,10 @@
     button.titleLabel.font = [UIFont boldSystemFontOfSize:30];
 //    button.center = self.view.center;
     button.layer.cornerRadius = 40;
-    [button addTarget:self action:@selector(actionBubble:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(actionDismiss:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)actionBubble:(UIButton *)sender {
+- (void)actionDismiss:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

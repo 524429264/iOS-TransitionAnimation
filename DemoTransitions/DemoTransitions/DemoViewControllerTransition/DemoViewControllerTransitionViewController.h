@@ -10,8 +10,8 @@
 
 typedef NS_ENUM(NSInteger, DemoViewControllerTransitionType) {
     DemoViewControllerTransitionTypePresent = 0,
+    DemoViewControllerTransitionTypePresentHalf,
     DemoViewControllerTransitionTypeBubble,
-    
 };
 
 @interface DemoViewControllerTransitionViewController : UIViewController

@@ -34,6 +34,7 @@
     
     _demos = @[
                @"Present",
+               @"Present Half",
                @"Bubble",
                @"Push/Pop",
                ];

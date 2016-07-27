@@ -10,6 +10,7 @@
 #import "DemoViewControllerTransitionPresentedViewController.h"
 
 #import "AnimatorPresentTransition.h"
+#import "AnimatorPresentHalfTransition.h"
 #import "AnimatorBubbleTransition.h"
 
 @interface DemoViewControllerTransitionViewController () <
@@ -74,6 +75,13 @@
             presentTransition.animatorTransitionType = kAnimatorTransitionTypePresent;
             return presentTransition;
         }
+        case DemoViewControllerTransitionTypePresentHalf:
+        {
+            // Present Half
+            AnimatorPresentHalfTransition *presentHalfTransition = [[AnimatorPresentHalfTransition alloc] init];
+            presentHalfTransition.animatorTransitionType = kAnimatorTransitionTypePresent;
+            return presentHalfTransition;
+        }
         case DemoViewControllerTransitionTypeBubble:
         {
             // Bubble
@@ -99,6 +107,13 @@
             AnimatorPresentTransition *presentTransition = [[AnimatorPresentTransition alloc] init];
             presentTransition.animatorTransitionType = kAnimatorTransitionTypeDismiss;
             return presentTransition;
+        }
+        case DemoViewControllerTransitionTypePresentHalf:
+        {
+            // Present Half
+            AnimatorPresentHalfTransition *presentHalfTransition = [[AnimatorPresentHalfTransition alloc] init];
+            presentHalfTransition.animatorTransitionType = kAnimatorTransitionTypeDismiss;
+            return presentHalfTransition;
         }
         case DemoViewControllerTransitionTypeBubble:
         {

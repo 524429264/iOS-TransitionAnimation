@@ -16,6 +16,8 @@
 		A4BC4DBD1D47334E00DCEFE7 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4DBC1D47334E00DCEFE7 /* RootTableViewController.m */; };
 		A4BC4E071D484C0600DCEFE7 /* AnimatorPresentHalfTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E061D484C0600DCEFE7 /* AnimatorPresentHalfTransition.m */; };
 		A4BC4E0A1D484C2C00DCEFE7 /* AnimatorPushPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E091D484C2C00DCEFE7 /* AnimatorPushPopTransition.m */; };
+		A4BC4E101D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E0F1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m */; };
+		A4BC4E131D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E121D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m */; };
 		A4DD339B1D3890A700F1F631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD339A1D3890A700F1F631 /* main.m */; };
 		A4DD339E1D3890A700F1F631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD339D1D3890A700F1F631 /* AppDelegate.m */; };
 		A4DD33A11D3890A700F1F631 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33A01D3890A700F1F631 /* DemoViewController.m */; };
@@ -26,7 +28,6 @@
 		A4DD33B61D38BCF400F1F631 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33B51D38BCF400F1F631 /* BViewController.m */; };
 		A4DD33B91D38BCFC00F1F631 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33B81D38BCFC00F1F631 /* CViewController.m */; };
 		A4DD33BC1D38C72500F1F631 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33BB1D38C72500F1F631 /* ChildViewController.m */; };
-		A4DD33C01D38DBA100F1F631 /* ViewCATransition_Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33BF1D38DBA100F1F631 /* ViewCATransition_Fade.m */; };
 		A4DD33C61D38F47300F1F631 /* DemoCATransitionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33C51D38F47300F1F631 /* DemoCATransitionTableViewController.m */; };
 		A4DD33C91D38F74400F1F631 /* DemoCATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33C81D38F74400F1F631 /* DemoCATransitionViewController.m */; };
 		A4DD33DA1D3DC35900F1F631 /* DemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33D91D3DC35900F1F631 /* DemoCollectionViewController.m */; };
@@ -52,6 +53,10 @@
 		A4BC4E061D484C0600DCEFE7 /* AnimatorPresentHalfTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatorPresentHalfTransition.m; sourceTree = "<group>"; };
 		A4BC4E081D484C2C00DCEFE7 /* AnimatorPushPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatorPushPopTransition.h; sourceTree = "<group>"; };
 		A4BC4E091D484C2C00DCEFE7 /* AnimatorPushPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatorPushPopTransition.m; sourceTree = "<group>"; };
+		A4BC4E0E1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCATransitionPresentedViewController.h; sourceTree = "<group>"; };
+		A4BC4E0F1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCATransitionPresentedViewController.m; sourceTree = "<group>"; };
+		A4BC4E111D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCATransitionPushedViewController.h; sourceTree = "<group>"; };
+		A4BC4E121D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCATransitionPushedViewController.m; sourceTree = "<group>"; };
 		A4DD33961D3890A700F1F631 /* DemoTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DD339A1D3890A700F1F631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4DD339C1D3890A700F1F631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,8 +75,6 @@
 		A4DD33B81D38BCFC00F1F631 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
 		A4DD33BA1D38C72500F1F631 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		A4DD33BB1D38C72500F1F631 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
-		A4DD33BE1D38DBA100F1F631 /* ViewCATransition_Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCATransition_Fade.h; sourceTree = "<group>"; };
-		A4DD33BF1D38DBA100F1F631 /* ViewCATransition_Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCATransition_Fade.m; sourceTree = "<group>"; };
 		A4DD33C41D38F47300F1F631 /* DemoCATransitionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCATransitionTableViewController.h; sourceTree = "<group>"; };
 		A4DD33C51D38F47300F1F631 /* DemoCATransitionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCATransitionTableViewController.m; sourceTree = "<group>"; };
 		A4DD33C71D38F74400F1F631 /* DemoCATransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCATransitionViewController.h; sourceTree = "<group>"; };
@@ -190,8 +193,10 @@
 				A4DD33C51D38F47300F1F631 /* DemoCATransitionTableViewController.m */,
 				A4DD33C71D38F74400F1F631 /* DemoCATransitionViewController.h */,
 				A4DD33C81D38F74400F1F631 /* DemoCATransitionViewController.m */,
-				A4DD33BE1D38DBA100F1F631 /* ViewCATransition_Fade.h */,
-				A4DD33BF1D38DBA100F1F631 /* ViewCATransition_Fade.m */,
+				A4BC4E0E1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.h */,
+				A4BC4E0F1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m */,
+				A4BC4E111D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.h */,
+				A4BC4E121D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m */,
 			);
 			path = DemoCATransition;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				A4DD33C91D38F74400F1F631 /* DemoCATransitionViewController.m in Sources */,
 				A4DD33C61D38F47300F1F631 /* DemoCATransitionTableViewController.m in Sources */,
 				836835AD1D39E4190065017C /* AnimatorPresentTransition.m in Sources */,
+				A4BC4E131D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m in Sources */,
 				A4DD33B31D38914600F1F631 /* AViewController.m in Sources */,
 				836835B31D3B59DC0065017C /* AnimatorBaseTransition.m in Sources */,
 				8368359C1D39D6200065017C /* DemoViewControllerTransitionTableViewController.m in Sources */,
@@ -291,11 +297,11 @@
 				836835A21D39DC540065017C /* DemoViewControllerTransitionPresentedViewController.m in Sources */,
 				A4DD33BC1D38C72500F1F631 /* ChildViewController.m in Sources */,
 				A4DD33DA1D3DC35900F1F631 /* DemoCollectionViewController.m in Sources */,
-				A4DD33C01D38DBA100F1F631 /* ViewCATransition_Fade.m in Sources */,
 				A4DD33B91D38BCFC00F1F631 /* CViewController.m in Sources */,
 				A4DD339E1D3890A700F1F631 /* AppDelegate.m in Sources */,
 				A4BC4DBD1D47334E00DCEFE7 /* RootTableViewController.m in Sources */,
 				A4BC4E0A1D484C2C00DCEFE7 /* AnimatorPushPopTransition.m in Sources */,
+				A4BC4E101D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m in Sources */,
 				836835B01D3B20700065017C /* AnimatorBubbleTransition.m in Sources */,
 				A4DD33B61D38BCF400F1F631 /* BViewController.m in Sources */,
 				A4DD339B1D3890A700F1F631 /* main.m in Sources */,

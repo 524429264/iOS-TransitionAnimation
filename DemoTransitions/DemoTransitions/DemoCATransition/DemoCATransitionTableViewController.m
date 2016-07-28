@@ -32,7 +32,20 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     _demos = @[
+               // 常见四种
                @"Fade",
+               @"Push",
+               @"MoveIn",
+               @"Reveal",
+               
+               @"Cube",
+               @"Flip",
+               @"SuckEffect",
+               @"RippleEffect",
+               @"PageCurl",
+               @"PageUnCurl",
+               @"CameraIrilHollowOpen",
+               @"CameraIrisHollowClose",
                ];
 }
 
@@ -61,7 +74,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DemoCATransitionViewController *demoVC = [[DemoCATransitionViewController alloc] init];
-    demoVC.demoType = DemoCATransitionTypeFade;
+    demoVC.demoType = indexPath.row;
     demoVC.navigationItem.title = _demos[indexPath.row];
     [self.navigationController pushViewController:demoVC animated:YES];
 }

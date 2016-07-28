@@ -83,7 +83,7 @@
             [self.navigationController.view.layer addAnimation:animation forKey:@"kTransitionAnimation"];
             
             DemoCATransitionPushedViewController *pushedVC = [[DemoCATransitionPushedViewController alloc] init];
-            [self.navigationController pushViewController:pushedVC animated:YES];
+            [self.navigationController pushViewController:pushedVC animated:NO];
             
             return;
         }
@@ -123,7 +123,7 @@
     
     
     DemoCATransitionPresentedViewController *presentedVC = [[DemoCATransitionPresentedViewController alloc] init];
-    [self presentViewController:presentedVC animated:YES completion:nil];
+    [self presentViewController:presentedVC animated:NO completion:nil];
 }
 
 @end

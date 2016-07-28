@@ -78,8 +78,13 @@
         {
             animation.type = @"cube";
             animation.subtype = kCATransitionFromRight;
+            
+//            [self.view.window.layer addAnimation:animation forKey:@"kTransitionAnimation"];
+            [self.navigationController.view.layer addAnimation:animation forKey:@"kTransitionAnimation"];
+            
             DemoCATransitionPushedViewController *pushedVC = [[DemoCATransitionPushedViewController alloc] init];
             [self.navigationController pushViewController:pushedVC animated:YES];
+            
             return;
         }
         case DemoCATransitionTypeOglFlip:

@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
-    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld", _imageIndex]];
+    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)_imageIndex]];
     [self.view addSubview:imageView];
     
     imageView.center = self.view.center;

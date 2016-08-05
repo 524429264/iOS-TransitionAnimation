@@ -12,10 +12,12 @@
 #import "AnimatorPresentTransition.h"
 #import "AnimatorPresentHalfTransition.h"
 #import "AnimatorBubbleTransition.h"
+#import "AnimatorDrawerTransition.h"
 
 @interface DemoViewControllerTransitionViewController () <
 
-    UIViewControllerTransitioningDelegate
+    UIViewControllerTransitioningDelegate,
+    AnimatorDrawerTransitionDelegate
 >
 
 @end
@@ -90,6 +92,15 @@
             bubbleTransition.animatorTransitionType = kAnimatorTransitionTypePresent;
             return bubbleTransition;
         }
+        case DemoViewControllerTransitionTypeDrawer:
+        {
+            // Drawer
+            AnimatorDrawerTransition *drawerTransition = [[AnimatorDrawerTransition alloc] init];
+            drawerTransition.animatorTransitionType = kAnimatorTransitionTypePresent;
+            drawerTransition.offset = 50.f;
+            drawerTransition.delegate = self;
+            return drawerTransition;
+        }
         default:
             break;
     }
@@ -123,6 +134,15 @@
             bubbleTransition.bubbleCenter = button.center;
             return bubbleTransition;
         }
+        case DemoViewControllerTransitionTypeDrawer:
+        {
+            // Drawer
+            AnimatorDrawerTransition *drawerTransition = [[AnimatorDrawerTransition alloc] init];
+            drawerTransition.animatorTransitionType = kAnimatorTransitionTypeDismiss;
+            drawerTransition.offset = 50.f;
+            drawerTransition.delegate = self;
+            return drawerTransition;
+        }
         default:
             break;
     }
@@ -130,6 +150,12 @@
     AnimatorPresentTransition *presentTransition = [[AnimatorPresentTransition alloc] init];
     presentTransition.animatorTransitionType = kAnimatorTransitionTypeDismiss;
     return presentTransition;
+}
+
+#pragma mark - <AnimatorDrawerTransitionDelegate>
+
+- (void)AnimatorDrawerTransitionDismissViaTapGesture {
+
 }
 
 @end

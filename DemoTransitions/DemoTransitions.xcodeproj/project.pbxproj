@@ -18,6 +18,7 @@
 		A4BC4E0A1D484C2C00DCEFE7 /* AnimatorPushPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E091D484C2C00DCEFE7 /* AnimatorPushPopTransition.m */; };
 		A4BC4E101D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E0F1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m */; };
 		A4BC4E131D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC4E121D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m */; };
+		A4D8AED81D53434100060E5F /* AnimatorDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D8AED71D53434100060E5F /* AnimatorDrawerTransition.m */; };
 		A4DD339B1D3890A700F1F631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD339A1D3890A700F1F631 /* main.m */; };
 		A4DD339E1D3890A700F1F631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD339D1D3890A700F1F631 /* AppDelegate.m */; };
 		A4DD33A11D3890A700F1F631 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD33A01D3890A700F1F631 /* DemoViewController.m */; };
@@ -57,6 +58,8 @@
 		A4BC4E0F1D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCATransitionPresentedViewController.m; sourceTree = "<group>"; };
 		A4BC4E111D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCATransitionPushedViewController.h; sourceTree = "<group>"; };
 		A4BC4E121D49E46A00DCEFE7 /* DemoCATransitionPushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCATransitionPushedViewController.m; sourceTree = "<group>"; };
+		A4D8AED61D53434100060E5F /* AnimatorDrawerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatorDrawerTransition.h; sourceTree = "<group>"; };
+		A4D8AED71D53434100060E5F /* AnimatorDrawerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatorDrawerTransition.m; sourceTree = "<group>"; };
 		A4DD33961D3890A700F1F631 /* DemoTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DD339A1D3890A700F1F631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4DD339C1D3890A700F1F631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				A4BC4E061D484C0600DCEFE7 /* AnimatorPresentHalfTransition.m */,
 				836835AE1D3B20700065017C /* AnimatorBubbleTransition.h */,
 				836835AF1D3B20700065017C /* AnimatorBubbleTransition.m */,
+				A4D8AED61D53434100060E5F /* AnimatorDrawerTransition.h */,
+				A4D8AED71D53434100060E5F /* AnimatorDrawerTransition.m */,
 			);
 			path = Animators;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				A4DD33DA1D3DC35900F1F631 /* DemoCollectionViewController.m in Sources */,
 				A4DD33B91D38BCFC00F1F631 /* CViewController.m in Sources */,
 				A4DD339E1D3890A700F1F631 /* AppDelegate.m in Sources */,
+				A4D8AED81D53434100060E5F /* AnimatorDrawerTransition.m in Sources */,
 				A4BC4DBD1D47334E00DCEFE7 /* RootTableViewController.m in Sources */,
 				A4BC4E0A1D484C2C00DCEFE7 /* AnimatorPushPopTransition.m in Sources */,
 				A4BC4E101D49E45800DCEFE7 /* DemoCATransitionPresentedViewController.m in Sources */,
@@ -418,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DemoTransitions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = icetime17.DemoTransitions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DemoTransitions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = icetime17.DemoTransitions;
 				PRODUCT_NAME = "$(TARGET_NAME)";

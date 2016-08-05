@@ -12,6 +12,7 @@ typedef NS_ENUM(NSInteger, DemoViewControllerTransitionType) {
     DemoViewControllerTransitionTypePresent = 0,
     DemoViewControllerTransitionTypePresentHalf,
     DemoViewControllerTransitionTypeBubble,
+    DemoViewControllerTransitionTypeDrawer,
 };
 
 @interface DemoViewControllerTransitionViewController : UIViewController
